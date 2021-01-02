@@ -1,0 +1,8 @@
+{
+  "sourceMap": true,
+  "compilerOptions": {
+    "jsx": "react",
+    "baseUrl": "/",
+    "types": ["cypress"]
+  }
+}
