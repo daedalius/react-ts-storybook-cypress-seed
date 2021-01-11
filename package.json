@@ -41,6 +41,7 @@
   "devDependencies": {
     "@cypress/react": "^4.16.1",
     "@cypress/webpack-preprocessor": "^5.5.0",
+    "@mdx-js/loader": "^1.6.22",
     "@storybook/addon-actions": "^6.1.11",
     "@storybook/addon-essentials": "^6.1.11",
     "@storybook/addon-links": "^6.1.11",
