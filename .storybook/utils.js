@@ -1,8 +1,18 @@
 /**
- * Adds a title and description to a Storybook Story
- * @param {Object|Function} story Storybook Story
- * @param {string} storyName
- * @param {string} storyDescription
+ * Adds a description to the whole Storybook Story (CSF)
+ * @param {Function} stories Storybook Stories (file default export)
+ * @param {string} storyDescription Stories description to display on the "Docs" page. MD format allowed.
+ */
+export function describeStories(stories, description) {
+  set(stories, 'parameters.docs.description.component', description)
+  return stories
+}
+
+/**
+ * Changes Storybook Story (CSF) name and adds a description
+ * @param {Function} story Storybook Story
+ * @param {string} storyName Story name to display on the navigation pane and on the "Docs" page
+ * @param {string} storyDescription Story name to display on the "Docs" page. MD format allowed.
  */
 export function describeStory(story, storyName, storyDescription) {
   set(story, 'storyName', storyName);
