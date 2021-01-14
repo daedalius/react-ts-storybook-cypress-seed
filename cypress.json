@@ -1,5 +1,7 @@
 {
+  "baseUrl": "http://localhost:8080",
   "experimentalComponentTesting": true,
   "componentFolder": "src",
-  "testFiles": "**/*.spec.*"
+  "testFiles": ["**/*.component.tests.*", "**/*.e2e.tests.*"],
+  "videoUploadOnPasses": false
 }

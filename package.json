@@ -5,6 +5,10 @@
   "scripts": {
     "start": "webpack serve",
     "build": "webpack",
+    "test:components:browser": "cypress run --browser chrome --config-file ./cypress/configs/components.json --config video=false",
+    "test:components:ci": "cypress run --config-file ./cypress/configs/components.json",
+    "test:e2e:browser": "cypress run --browser chrome --config-file ./cypress/configs/e2e.json --config video=false",
+    "test:e2e:ci": "cypress run --config-file ./cypress/configs/e2e.json",
     "cypress": "cypress open",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook --output-dir ./dist/storybook"
