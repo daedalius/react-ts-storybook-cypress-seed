@@ -3,6 +3,9 @@
   "compilerOptions": {
     "jsx": "react",
     "baseUrl": "/",
-    "types": ["cypress"]
-  }
+    "types": ["jest"],
+    "moduleResolution": "node"
+  },
+  "include": ["src/**/*.tsx", "src/**/*.ts"],
+  "exclude": ["cypress/", "src/**/*.component.tests.tsx"]
 }
