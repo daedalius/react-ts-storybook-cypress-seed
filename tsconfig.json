@@ -2,10 +2,12 @@
   "sourceMap": true,
   "compilerOptions": {
     "jsx": "react",
-    "baseUrl": "/",
+    "baseUrl": "./",
     "types": ["jest"],
-    "moduleResolution": "node"
+    "paths": {
+      "#components/*": ["src/components/*"],
+      "#storybook/*": [".storybook/*"]
+    }
   },
-  "include": ["src/**/*.tsx", "src/**/*.ts"],
   "exclude": ["cypress/", "src/**/*.component.tests.tsx"]
 }
