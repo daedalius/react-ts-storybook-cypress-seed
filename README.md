@@ -5,7 +5,7 @@
 - Not a Solid🐍 or a 💎🐕
 - React
 - Typescript
-- Webpack
+- Webpack 4 (not 5 because of Storybook)
 - Storybook
 - Cypress
 - Jest
@@ -15,6 +15,7 @@
 
 ## Misc and tweaks
 
+- Some image loading
 - Some Prettier config
 - Some Storybook helper functions to easily describe Stories in CSF-format
 - Changed Storybook Docs global render (you may remove "docs" section from "parameters" in ./storybook/preview.js file)
