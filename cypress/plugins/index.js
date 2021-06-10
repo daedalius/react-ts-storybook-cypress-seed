@@ -1,11 +1,16 @@
 /// <reference types="cypress" />
 
-const webpackPreprocessor = require('./webpack-preprocessor.js');
+const { startDevServer } = require('@cypress/webpack-dev-server')
+const modifiedWebpackConfig = require('./modifiedWebpackConfig');
 
 /**
  * @type {Cypress.PluginConfig}
  */
 module.exports = (on, config) => {
-  on('file:preprocessor', webpackPreprocessor);
+  on('dev-server:start', (options) => startDevServer({
+    options: options,
+    webpackConfig: modifiedWebpackConfig 
+  }));
+  
   return config;
 };

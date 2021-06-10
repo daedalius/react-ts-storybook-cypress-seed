@@ -7,11 +7,12 @@
     "build": "webpack --mode production",
     "test:unit": "jest",
     "test:unit:watch": "jest --watch",
-    "test:components:browser": "cypress run --browser chrome --config-file ./cypress/configs/components.json --config video=false",
-    "test:components:ci": "cypress run --config-file ./cypress/configs/components.json",
+    "test:components:browser": "cypress run-ct --headed --config-file ./cypress/configs/components.json --config video=false",
+    "test:components:ci": "cypress run-ct --config-file ./cypress/configs/components.json",
     "test:e2e:browser": "cypress run --browser chrome --config-file ./cypress/configs/e2e.json --config video=false",
     "test:e2e:ci": "cypress run --config-file ./cypress/configs/e2e.json",
     "cypress": "cypress open",
+    "cypress-ct": "cypress open-ct",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook --output-dir ./dist/storybook"
   },
@@ -49,6 +50,7 @@
   },
   "devDependencies": {
     "@cypress/react": "5.9.1",
+    "@cypress/webpack-dev-server": "^1.3.1",
     "@cypress/webpack-preprocessor": "5.9.0",
     "@mdx-js/loader": "1.6.22",
     "@storybook/addon-actions": "6.2.9",
