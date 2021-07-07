@@ -1,0 +1,11 @@
+/.git
+.gitignore
+/dist
+/node_modules
+**/.DS_Store
+
+/cypress/videos
+
+Dockerfile
+.dockerignore
+docker-compose.yml
