@@ -1,5 +1,7 @@
 const { resolve } = require('path');
 const createMdxCompiler = require('@storybook/addon-docs/mdx-compiler-plugin.js');
+const CopyPlugin = require('copy-webpack-plugin');
+
 const projectWebpackConfig = require('../webpack.config');
 
 module.exports = {
@@ -35,6 +37,11 @@ module.exports = {
       ...(projectWebpackConfig.resolve.alias || {}),
       '#storybook': resolve(__dirname, `./`),
     };
+
+    // copying public folder
+    config.plugins.push(
+      (() => projectWebpackConfig.plugins.find(i => i instanceof CopyPlugin))()
+    )
 
     return config;
   },

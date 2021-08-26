@@ -1,5 +1,6 @@
 const { resolve } = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
   entry: './src/main.tsx',
@@ -50,8 +51,16 @@ module.exports = {
   resolve: {
     alias: {
       '#components': resolve(__dirname, `./src/components`),
+      '#public': resolve(__dirname, `./src/public`),
     },
     extensions: ['.ts', '.tsx', '.js', '.jsx', '.json'],
   },
-  plugins: [new HtmlWebpackPlugin({ template: './src/index.html' })],
+  plugins: [
+    new HtmlWebpackPlugin({ template: './public/index.html' },),
+    new CopyPlugin({
+      patterns: [
+        { from: "public", to: "public", filter: resourcePath => !resourcePath.includes('index.html') },
+      ],
+    }),
+  ],
 };
