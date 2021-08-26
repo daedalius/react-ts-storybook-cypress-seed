@@ -1,0 +1,50 @@
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://web.resource.org/cc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:svg="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:ns1="http://sozi.baierouge.fr" xmlns:xlink="http://www.w3.org/1999/xlink" id="svg2" viewBox="0 0 720 720" version="1.1" inkscape:version="0.91 r13725">
+  <g id="layer1" transform="translate(0 -332.36)">
+    <path id="path3521" style="fill:#0000ff" d="m470 772.74c0 121.5-98.497 220-220 220s-220-98.497-220-220 98.497-220 220-220 220 98.497 220 220z"/>
+    <path id="path3523" style="fill:#00ff00" d="m690 772.74c0 121.5-98.497 220-220 220s-220-98.497-220-220 98.497-220 220-220 220 98.497 220 220z"/>
+    <path id="path3525" style="fill:#ff0000" d="m580 582.42c0 121.5-98.497 220-220 220s-220-98.5-220-220 98.497-220 220-220 220 98.497 220 220z"/>
+    <path id="path3527" style="fill:#ffff00" d="m470 772.97c-65.736-38.045-110-109.02-110-190.44 32.362-18.723 69.923-29.448 110-29.448 40.095 0 77.628 10.823 110 29.562-0.041593 81.347-44.321 152.29-110 190.32z"/>
+    <path id="path3529" style="fill:#ff00ff" d="m250 772.86c-65.74-38.05-110-109.03-110-190.44 32.362-18.723 69.923-29.448 110-29.448 40.095 0 77.628 10.823 110 29.563-0.041593 81.347-44.321 152.29-110 190.32z"/>
+    <path id="path3531" style="fill:#00ffff" d="m360 963.29c-65.74-38.04-110-109.02-110-190.43 32.362-18.723 69.923-29.448 110-29.448 40.095 0 77.628 10.823 110 29.563-0.041593 81.347-44.321 152.29-110 190.32z"/>
+    <path id="path3438" style="fill:#ffffff" d="m360 582.42c-65.74 38.04-110 109.02-110 190.44 32.362 18.723 69.923 29.448 110 29.448 40.095 0 77.628-10.823 110-29.563-0.041593-81.347-44.321-152.29-110-190.32z"/>
+  </g>
+  <metadata>
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+        <cc:license rdf:resource="http://creativecommons.org/licenses/publicdomain/"/>
+        <dc:publisher>
+          <cc:Agent rdf:about="http://openclipart.org/">
+            <dc:title>Openclipart</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:title>circle rgb color mix</dc:title>
+        <dc:date>2011-05-06T02:10:02</dc:date>
+        <dc:description>this picture is almost exactly like the picture at&#13;\nhttp://en.wikipedia.org/wiki/File:AdditiveColor.svg&#13;\nI made it from scratch in inkscape though just for the experience and it fits in with my other color mix pictures I've done this week.&#13;\n&#13;\nAside from that, I also like to buy prints of my own stuff on deviantart so I can show them to people who are technologically challenged.</dc:description>
+        <dc:source>https://openclipart.org/detail/136057/circle-rgb-color-mix-by-10binary</dc:source>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>10binary</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>blue</rdf:li>
+            <rdf:li>circle</rdf:li>
+            <rdf:li>color</rdf:li>
+            <rdf:li>green</rdf:li>
+            <rdf:li>mix</rdf:li>
+            <rdf:li>red</rdf:li>
+            <rdf:li>rgb</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+      <cc:License rdf:about="http://creativecommons.org/licenses/publicdomain/">
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"/>
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>

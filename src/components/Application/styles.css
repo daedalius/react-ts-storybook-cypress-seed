@@ -5,6 +5,6 @@ h1 {
 .lenna {
   width: 250px;
   height: 250px;
-  background-image: url('./lenna.png');
+  background-image: url('./images/lenna.png');
   background-size: contain;
 }

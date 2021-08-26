@@ -18,6 +18,7 @@
 - Some Prettier config
 - Some ESLint config
 - Some image loading
+- Some SVG loading
 - Some Storybook helper functions to easily describe Stories in CSF-format
 - Changed Storybook Docs global render (you may remove "docs" section from "parameters" in ./storybook/preview.js file)
 - Two tsconfigs to avoid [Cypress/Jest typings collision](https://github.com/cypress-io/cypress-and-jest-typescript-example)
