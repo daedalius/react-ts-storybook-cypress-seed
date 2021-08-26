@@ -8,7 +8,8 @@
     "paths": {
       "#components/*": ["src/components/*"],
       "#storybook/*": [".storybook/*"]
-    }
+    },
+    "esModuleInterop": true
   },
   "exclude": ["cypress/", "src/**/*.component.tests.tsx"]
 }

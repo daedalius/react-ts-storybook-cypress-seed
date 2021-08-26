@@ -1,10 +1,9 @@
-/* eslint-disable react/no-unescaped-entities */
-import * as React from 'react';
+import React from 'react';
 
 import lennaImageUrl from './lenna.png';
 import './styles.css';
 
-export const Application = () : JSX.Element => {
+export const Application = (): JSX.Element => {
   return (
     <>
       <h1>Hello!</h1>
@@ -20,4 +19,4 @@ export const Application = () : JSX.Element => {
       </section>
     </>
   );
-} ;
+};
