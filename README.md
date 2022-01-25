@@ -7,7 +7,7 @@
 - Typescript
 - Webpack 5
 - Storybook 6
-- Cypress 7
+- Cypress 9
 - Jest 27
 - React Testing Library
 
@@ -30,7 +30,7 @@
 | ---------------------------| ---------------------------------------------------------------------- |
 | start                      | Starts an App, visits local URL                                        |
 | run:docker-compose         | Starts an App hosted in docker-container (visit http://127.0.0.1:4001) |
-| run:docker-compose:rebuild | The same as above, but builds a containers from scratch                |
+| run:docker-compose:rebuild | The same as above, but builds  containers from scratch                 |
 | build                      | Builds an App, puts build in dist/app                                  |
 | test:unit                  | Runs simple js and js-dom based unit-tests                             |
 | test:unit:watch            | The same as above, but for new (uncommitted) unit-test                 |
