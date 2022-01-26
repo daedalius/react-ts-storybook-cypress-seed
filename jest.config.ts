@@ -12,4 +12,13 @@ export default {
     '^.+\\.(js|jsx|ts|tsx)$': '<rootDir>/node_modules/babel-jest',
   },
   transformIgnorePatterns: ['/node_modules/'],
+  collectCoverage: true,
+  collectCoverageFrom: ['./src/**'],
+  coveragePathIgnorePatterns: [
+    'node_modules',
+    '.component.tests.tsx',
+    '.unit.tests.tsx',
+    '.stories.tsx',
+  ],
+  coverageDirectory: './coverage/jest',
 };

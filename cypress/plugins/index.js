@@ -12,6 +12,6 @@ module.exports = (on, config) => {
       webpackConfig: require('../../webpack.config'),
     })
   );
-
+  require('@cypress/code-coverage/task')(on, config);
   return config;
 };

@@ -2,14 +2,18 @@
 
 ## What is in the box? 📦
 
-- Not a Solid🐍 or a 💎🐕
+- Not a Solid 🐍
 - React 17
-- Typescript
+- TypeScript
 - Webpack 5
 - Storybook 6
 - Cypress 9
 - Jest 27
 - React Testing Library
+- Collecting total code-coverage from:
+  - Cypress e2e test runs
+  - Cypress component test runs
+  - Jest test runs
 
 ✅ Storybook and Cypress run on the Webpack config provided.
 
@@ -27,10 +31,11 @@
 ## NPM commands
 
 | npm run ...                | Description                                                            |
-| ---------------------------| ---------------------------------------------------------------------- |
+| -------------------------- | ---------------------------------------------------------------------- |
 | start                      | Starts an App, visits local URL                                        |
+| start:instrumented         | Starts an App, instruments code to collect code coverage during e2e    |
 | run:docker-compose         | Starts an App hosted in docker-container (visit http://127.0.0.1:4001) |
-| run:docker-compose:rebuild | The same as above, but builds  containers from scratch                 |
+| run:docker-compose:rebuild | The same as above, but builds containers from scratch                  |
 | build                      | Builds an App, puts build in dist/app                                  |
 | test:unit                  | Runs simple js and js-dom based unit-tests                             |
 | test:unit:watch            | The same as above, but for new (uncommitted) unit-test                 |
@@ -42,3 +47,15 @@
 | cypress-ct                 | Opens Cypress UI for component tests                                   |
 | storybook                  | Runs Storybook                                                         |
 | build-storybook            | Builds Storybook, puts build in dist/storybook                         |
+| report-total-coverage      | Merges Cypress, Cypress-CT and Jest tests coverage into single report  |
+
+## Code coverage
+
+📊 To see total code coverage report run one by one:
+
+- `npm run start:instrumented`
+- `npm run test:e2e:ci` or `npm run test:e2e:browser`
+- `npm run test:components:ci` or `npm run test:components:browser`
+- `npm run test:unit`
+- `npm run report-total-coverage`
+  The report is waiting for you in `/coverage/total/lcov-report/index.html`.

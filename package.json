@@ -4,19 +4,21 @@
   "description": "Just another seed for mine and your React projects",
   "scripts": {
     "start": "webpack serve --mode development --open",
+    "start:instrumented": "cross-env NODE_ENV=instrumented webpack serve --mode development",
     "run:docker-compose": "docker-compose up",
     "run:docker-compose:rebuild": "docker-compose up --build",
     "build": "webpack --mode production",
     "test:unit": "jest",
     "test:unit:watch": "jest --watch",
-    "test:components:browser": "cypress run-ct --headed --config-file ./cypress/configs/components.json --config video=false",
-    "test:components:ci": "cypress run-ct --config-file ./cypress/configs/components.json",
+    "test:components:browser": "cross-env NODE_ENV=instrumented cypress run-ct --headed --config-file ./cypress/configs/components.json --config video=false",
+    "test:components:ci": "cross-env NODE_ENV=instrumented cypress run-ct --config-file ./cypress/configs/components.json",
     "test:e2e:browser": "cypress run --browser chrome --config-file ./cypress/configs/e2e.json --config video=false",
     "test:e2e:ci": "cypress run --config-file ./cypress/configs/e2e.json",
     "cypress": "cypress open",
     "cypress-ct": "cypress open-ct",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook --output-dir ./dist/storybook"
+    "build-storybook": "build-storybook --output-dir ./dist/storybook",
+    "test:report-total-coverage": "node ./report-total-coverage"
   },
   "repository": {
     "type": "git",
@@ -54,6 +56,7 @@
     "webpack-cli": "4.9.1"
   },
   "devDependencies": {
+    "@cypress/code-coverage": "3.9.12",
     "@cypress/react": "5.12.1",
     "@cypress/webpack-dev-server": "1.8.0",
     "@cypress/webpack-preprocessor": "5.11.0",
@@ -70,6 +73,8 @@
     "@typescript-eslint/eslint-plugin": "5.10.0",
     "@typescript-eslint/parser": "5.10.0",
     "babel-jest": "27.4.6",
+    "babel-plugin-istanbul": "6.1.1",
+    "cross-env": "7.0.3",
     "cypress": "9.3.1",
     "dotenv-webpack": "7.0.3",
     "eslint": "8.7.0",
@@ -77,6 +82,7 @@
     "eslint-plugin-react-hooks": "4.3.0",
     "identity-obj-proxy": "3.0.0",
     "jest": "27.4.7",
+    "nyc": "15.1.0",
     "ts-node": "10.4.0",
     "webpack-dev-server": "4.7.3"
   },
@@ -91,5 +97,8 @@
     "jsxBracketSameLine": false,
     "arrowParens": "always",
     "endOfLine": "lf"
+  },
+  "nyc": {
+    "report-dir": "coverage/cypress"
   }
 }

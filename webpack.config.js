@@ -1,11 +1,11 @@
 const { resolve } = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CopyPlugin = require("copy-webpack-plugin");
+const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: './src/main.tsx',
   output: {
-    path: resolve('./dist/app')
+    path: resolve('./dist/app'),
   },
   module: {
     rules: [
@@ -28,6 +28,18 @@ module.exports = {
             '@babel/preset-typescript',
           ],
           plugins: ['@babel/proposal-class-properties', '@babel/proposal-object-rest-spread'],
+          env: {
+            instrumented: {
+              plugins: [
+                [
+                  'istanbul',
+                  {
+                    exclude: ['**/*e2e*'],
+                  },
+                ],
+              ],
+            },
+          },
         },
       },
       {
@@ -45,14 +57,14 @@ module.exports = {
             loader: 'file-loader',
             options: {
               name: '[name]-[hash].[ext]',
-              outputPath: 'images'
+              outputPath: 'images',
             },
           },
         ],
       },
       {
         test: /\.(png|jpe?g|gif)$/i,
-        type: 'asset/resource'
+        type: 'asset/resource',
       },
     ],
   },
@@ -64,11 +76,9 @@ module.exports = {
     extensions: ['.ts', '.tsx', '.js', '.jsx', '.json'],
   },
   plugins: [
-    new HtmlWebpackPlugin({ template: './public/index.html' },),
+    new HtmlWebpackPlugin({ template: './public/index.html' }),
     new CopyPlugin({
-      patterns: [
-        { from: "public", to: "public", filter: resourcePath => !resourcePath.includes('index.html') },
-      ],
+      patterns: [{ from: 'public', to: 'public', filter: (resourcePath) => !resourcePath.includes('index.html') }],
     }),
   ],
 };
