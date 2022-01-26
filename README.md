@@ -58,4 +58,5 @@
 - `npm run test:components:ci` or `npm run test:components:browser`
 - `npm run test:unit`
 - `npm run report-total-coverage`
-  The report is waiting for you in `/coverage/total/lcov-report/index.html`.
+  
+The report is waiting for you in `/coverage/total/lcov-report/index.html`.
